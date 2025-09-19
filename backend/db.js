@@ -1,12 +1,10 @@
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 dotenv.config();
-const MongoDB=process.env.MONGO_DB
+const MongoDB = 'mongodb+srv://Abhay:abhay007@cluster0.w8o52w3.mongodb.net/';
 
 
-mongoose.connect(MongoDB
-    
-).then(()=>{
+mongoose.connect(MongoDB).then(()=>{
     console.log("Connected to MongoDB")
 })
 const userPaytm=mongoose.Schema({
